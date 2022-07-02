@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPagePrincipal.master.cs" Inherits="WebAgenda.MasterPagePrincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://kit.fontawesome.com/48ebbfb61b.js" crossorigin="anonymous"></script>
+    <link href="StyleMasterPage.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <input type="checkbox" id="check" />
+    <label for="check">
+        <img src="Imagens/icons-cardapio.png" alt="Menu" />
+    </label>
+    <nav>
+        <ul>
+            <li><a href="index.aspx"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="usuarios.aspx"><i class="fa-solid fa-users"></i></a></li>
+            <li><a href="contatos.aspx"><i class="fa-solid fa-address-book"></i></a></li>
+            <li><a href="login.aspx"><i class="fa-solid fa-circle-xmark"></i></a></li>
+        </ul>
+    </nav>
+        <form id="form1" runat="server">
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+        </form>
+</body>
+</html>

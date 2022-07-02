@@ -1,0 +1,38 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    //background-color: #00ABE0;
+    background: linear-gradient(180deg, #00ABE0, #99CA3B) no-repeat;
+}
+
+#formIndex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #e1e1e1;
+}
+
+div {
+    //width: 300px;
+    //height: 300px;
+    //position:absolute;
+}
+
+div h1 {
+    position: relative;
+    //top: 20px;
+    //left: 20px;
+    font-size: 7rem;
+}
+
+div p {
+    position: relative;
+    font-size: 3rem;
+    top: -100px;
+}
+
+div p:hover {
+    color: #99C578;
+}

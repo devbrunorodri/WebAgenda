@@ -1,0 +1,55 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    //background-color: #00ABE0;
+    background: url("Imagens/back-image.png") no-repeat;
+    //background: linear-gradient(180deg, #00ABE0, #99CA3B) no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #edf8fc;
+    display: block;
+    padding: 60px 20px;
+}
+
+a:hover {
+    color: #00ABE0;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+img {
+    width: 35px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+   transform: translateX(350px);
+}
+
+nav {
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    transition: all 0.5s;
+}
+
+label {
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
